@@ -11,6 +11,7 @@ export default class deleteClientService {
       throw new AppError("Informe ID válido");
     } else {
       const cliente = await clientRepository.delete(data);
+      console.log();
     }
   }
 }
